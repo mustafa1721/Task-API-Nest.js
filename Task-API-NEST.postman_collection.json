@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "3ea20c59-e42d-4fe7-9de9-edfeecbee9e5",
+		"name": "Task-API-NEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ViewTasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TaskId\": 3,\r\n    \"TaskName\": \"python\",\r\n    \"TaskDescription\": \"python program to find odd numbers\",\r\n    \"DueDate\": \"31/12/2023\",\r\n    \"Assignee\": \"john\",\r\n    \"Status\": \"pending\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/task",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddTasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TaskId\": 3,\r\n    \"TaskName\": \"python\",\r\n    \"TaskDescription\": \"python program to find odd numbers\",\r\n    \"DueDate\": \"31/12/2023\",\r\n    \"Assignee\": \"john\",\r\n    \"Status\": \"pending\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTask",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TaskId\": 3,\r\n    \"TaskName\": \"python\",\r\n    \"TaskDescription\": \"python program to find odd numbers\",\r\n    \"DueDate\": \"31/12/2023\",\r\n    \"Assignee\": \"john\",\r\n    \"Status\": \"pending\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/task/655f376a013ee3c93ca16a8b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"655f376a013ee3c93ca16a8b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTask",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/task/655f376a013ee3c93ca16a8b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"655f376a013ee3c93ca16a8b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ViewTeam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/team",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddTeamMembers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TeamId\": 2,\r\n    \"TeamName\": \"Devops\",\r\n    \"TeamMembers\": [\"John\",\"Alice\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/team/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"team",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTeam",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TeamId\": 2,\r\n    \"TeamName\": \"Devops\",\r\n    \"TeamMembers\": [\"John\",\"Alice\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/team/656095dad502c0ccfbcb8875",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"team",
+						"656095dad502c0ccfbcb8875"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTeam",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/team/656095dad502c0ccfbcb8875",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"team",
+						"656095dad502c0ccfbcb8875"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
